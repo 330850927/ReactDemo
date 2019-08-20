@@ -1,5 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import "./style.css";
+import Test from './Test';
 import TodoItem from "./TodoItem";
 class TodoList extends Component{
     constructor(props){
@@ -28,6 +29,7 @@ class TodoList extends Component{
                 <ul>
                     {this.getTodoItem()}
                 </ul>
+                <Test content={this.state.inputValue}/>
             </Fragment>
         )
     }
